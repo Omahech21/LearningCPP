@@ -1,0 +1,27 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Print the array with an unset number of elements
+// Example: if array is a[3] = {1,2,3} this is set
+//          if array is a[]= {1,2,3} then it is not set 
+         
+//        where set means number inside bracket
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+    int apples[] = {1,2,3,4,5};                       // initiates array
+
+    int q = sizeof(apples) / sizeof(apples)[0];       // obtain the size of array
+  
+    for (int a = 0; a < q; a++)                      // for each iteration from 0 to the size of array keep going by 1
+    {
+        cout << "value of a: " << apples[a] << endl;  //  print the element within until array is complete
+    }
+
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
